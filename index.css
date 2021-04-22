@@ -65,6 +65,16 @@ body h1, body h2, body h3, body h4, body h5 {
   width: 100%;
   max-width: 117rem;
 }
+@media all and (max-width: 117rem) {
+  .page {
+    padding: 0 3.2rem;
+  }
+}
+@media all and (max-width: 80rem) {
+  .page {
+    padding: 0 1.5rem;
+  }
+}
 
 .socials {
   display: flex;
@@ -679,6 +689,7 @@ body h1, body h2, body h3, body h4, body h5 {
   left: 0;
   width: 100%;
   max-height: 76.8rem;
+  height: 100%;
 }
 .contact__text {
   display: flex;

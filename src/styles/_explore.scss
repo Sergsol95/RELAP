@@ -1,0 +1,68 @@
+.explore {
+    display: flex;
+    padding: 3.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+
+    @media all and (max-width: 850px) {
+        flex-direction: column;
+    }
+    
+
+    &__text {
+        margin-bottom: 12rem;
+
+        @media all and (max-width: 850px) {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+
+    &__title {
+        font-family: Poppins;
+        font-size: 7.2rem;
+        color: $white;
+        font-weight: 700;
+        line-height: 7.2rem;
+        max-width: 35rem;
+        margin-bottom: 2.5rem;
+
+        @media all and (max-width: 550px) {
+            font-size: 5.6rem;
+            line-height: 6.4rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 3.5rem;
+        color: $white;
+        max-width: 37rem;
+    }
+
+    &__img {
+        width: 70.5rem;
+        position: relative;
+
+        @media all and (max-width: 1150px) {
+            width: 60rem;
+            height: 65rem;
+        }
+
+        @media all and (max-width: 980px) {
+            width: 50rem;
+            height: 65rem;
+        }
+
+        @media all and (max-width: 850px) {
+            width: 41rem;
+            height: auto;
+            position: relative;
+            left: 3rem;
+        }
+    }
+
+
+}

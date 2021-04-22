@@ -1,0 +1,82 @@
+.blog {
+
+    display: flex;
+    position: relative;
+    background-color: $lightrose;
+    color: $black;
+    padding: 16rem 0;
+    justify-content: center;
+
+    &__text {
+        margin-top: 6rem;
+        margin-right: 10rem;
+    }
+
+    &__mini-title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1.8rem;
+    }
+
+    &__title {
+        max-width: 46.6rem;
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+        font-weight: 600;
+        margin-bottom: 2.3rem;
+    }
+
+    &__description {
+        max-width: 57rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 47rem;
+        margin-bottom: 3.2rem;
+        font-weight: 600;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__card {
+        position: absolute;
+        transform: translate(4rem, -20rem);
+    }
+
+    &__card-title {
+        font-family: 700;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $white;
+        margin-bottom: 0.8rem;
+    }
+
+    &__card-description {
+        font-weight: 400;
+        max-width: 47.4rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $white;
+        opacity: 0.49;
+        margin-bottom: 1.6rem;
+    }
+
+    &__person {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name-img {
+        margin-right: 2rem;
+    }
+
+    &__person-name {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $white;
+    }
+
+}

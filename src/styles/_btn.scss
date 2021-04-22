@@ -1,0 +1,65 @@
+.btn {
+    display: flex;
+    border-radius: 2.4rem;
+    padding: 1.2rem 4.2rem;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: $white;
+    align-items: center;
+    font-family: Source Sans Pro;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+
+
+    &_main {
+        border: 1px solid $grey;
+
+        @media all and (max-width: 750px) {
+            display: none;
+        }
+    }
+
+    &_burger {
+        display: none;
+
+        @media all and (max-width: 750px) {
+            display: flex;
+            width: 2rem;
+            height: 0.3rem;
+            background-color: $violet;
+            border-radius: 0;
+            padding: 0;
+            position: relative;
+
+            ::after {
+                display: block;
+                content: "";
+                position: absolute;
+                width: 2rem;
+                height: 0.3rem;
+                background-color: $violet;
+                padding: 10px;
+            }
+        }
+    }
+
+    &_secondary {
+        background-color: $orange;
+        padding: 1.2rem 5.2rem;
+    }
+
+    &_third {
+        background-color: $violet;
+        padding: 1.2rem 5.2rem;
+        margin: 0 auto;
+    }
+
+    &_flex-start {
+        margin: 0;
+    }
+
+}

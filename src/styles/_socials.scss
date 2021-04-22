@@ -1,0 +1,32 @@
+.socials {
+
+    display: flex;
+    align-items: center;
+
+    &__link {
+
+        &:not(:last-child) {
+            margin-right: 0.8rem;
+        }
+    }
+
+    &_explore {
+        position: absolute;
+        bottom: 100px;
+        transform: translateX(530%);
+
+        @media all and (max-width:1150px) 
+        {
+            transform: translateX(430%); 
+        }
+
+        @media all and (max-width:980px) 
+        {
+            transform: translateX(350%); 
+        }
+    }
+
+    &_footer {
+        margin-bottom: 1.4rem;
+    }
+}

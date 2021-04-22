@@ -1,0 +1,50 @@
+.team {
+
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    // background-color: #3023AE;
+    color: $white;
+    padding: 16rem 0;
+    justify-content: center;
+
+    &__text {
+        margin-top: 3rem;
+    }
+
+    &__mini-title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 1.8rem;
+    }
+
+    &__title {
+        max-width: 35.9rem;
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+        font-weight: 600;
+        margin-bottom: 2.3rem;
+    }
+
+    &__description {
+        max-width: 57rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        max-width: 47rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &__back-img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        max-height: 76.8rem;
+        object-fit: cover;
+    }
+
+    &__img {
+        margin-right: 20rem;
+    }
+
+}

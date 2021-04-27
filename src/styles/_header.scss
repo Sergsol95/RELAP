@@ -1,26 +1,29 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 3.5rem 0;
+    padding-top: 3.5rem;
+    align-items: center;
+    z-index: 1;
 
-    @media all and (max-width: 1170px)  {
-        padding: 3.2rem 0;
+    @media all and (max-width: 1170px) {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
     }
 
-    @media all and (max-width: 750px)  {
-        padding: 1.6rem 0;
+    @media all and (max-width: $screen_phablet) {
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
         background-color: $white;
     }
 
     &__title {
-        font-family: Poppins;
         font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: 48px;
         color: $white;
 
-        @media all and (max-width: 750px)  {
+        @media all and (max-width: $screen_phablet) {
             color: $black
         }
     }
@@ -28,13 +31,11 @@
     &__cover {
 
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         top: 0;
         left: 0;
-        width: 100%;
-
-        max-height: 76.8rem;
-        height: 100%;
+        width: auto;
+        height: 118%;
 
         object-fit: cover;
     }
@@ -42,21 +43,21 @@
     &__nav {
         display: flex;
         padding: 0;
-        align-items: flex-end;
+        align-items: center;
     }
 
     &__nav-item {
-        font-weight: Source Sans Pro;
+        font-family: Source Sans Pro;
         font-size: 1.6rem;
         font-weight: 600;
         list-style: none;
         color: $white;
 
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-right: 2.5rem;
         }
 
-        @media all and (max-width: 750px) {
+        @media all and (max-width: $screen_phablet) {
             display: none;
         }
     }

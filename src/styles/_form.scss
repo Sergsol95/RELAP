@@ -1,18 +1,24 @@
 .form {
     display: flex;
-    
+
 
     &__input {
         font-weight: 300;
         font-size: 1.6rem;
         line-height: 2.4rem;
         padding: 1.2rem 1.5rem;
-        border: 1px solid rgba($color: $black, $alpha: 0.49);
+        border: 1px solid $borderwhite;
         border-radius: 3px;
         margin-right: 3rem;
         min-height: 5.1rem;
-        min-width: 33rem;
+        width: 37rem;
         display: flex;
+
+        @media all and (max-width:1000px) {
+            margin: 0 auto;
+            margin-bottom: 1.6rem;
+            width: 34.6rem;
+        }
 
 
         &::placeholder {
@@ -28,5 +34,16 @@
 
     &_contact {
         margin-bottom: 16.5rem;
+
+        @media all and (max-width:1000px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        @media all and (max-width:850px) {
+            margin: 0 auto;
+            margin-bottom: 6.4rem;
+        }
     }
 }

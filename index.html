@@ -11,47 +11,51 @@
 
 <body>
     <div class="page">
-        <header class="header">
-            <img src="./src/img/back.jpg" class="header__cover" alt="">
-            <h2 class="header__title">RELAP</h2>
-            <nav class="header__nav">
-                <li class="header__nav-item"><a class="header__nav-link" href="">Home</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="">Features</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="">Works</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="">About</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="">People</a></li>
-                <li class="header__nav-item"><a class="header__nav-link" href="">News</a></li>
-            </nav>
-            <button class="btn btn_main">Contact Us</button>
-            <button class="btn btn_burger"></button>
-        </header>
         <section class="explore">
-            <div class="explore__text">
-                <h1 class="explore__title">Omnis
-                    Voluptas</h1>
-                <p class="explore__description">Temporibus autem quibusdam et aut officiis debitis aut rerum
-                    necessitatibus saepe
-                    eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-                <button class="btn btn_secondary">Explore</button>
-            </div>
-            <div class="explore__pictures">
-                <img src="/src/img/desktop-im.svg" alt="Desktop" class="explore__img">
-                <!-- <div class="socials socials_explore">
+            <img src="./src/img/back.png" srcset="./src/img/back@2x.png 2x, ./src/img/back@3x.png 3x"
+                class="header__cover" alt="">
+            <header class="header">
+                <h2 class="header__title">RELAP</h2>
+                <nav class="header__nav">
+                    <p class="header__nav-item"><a class="header__nav-link" href="">Home</a></p>
+                    <p class="header__nav-item"><a class="header__nav-link" href="">Features</a></p>
+                    <p class="header__nav-item"><a class="header__nav-link" href="">Works</a></p>
+                    <p class="header__nav-item"><a class="header__nav-link" href="">About</a></p>
+                    <p class="header__nav-item"><a class="header__nav-link" href="">People</a></p>
+                    <p class="header__nav-item"><a class="header__nav-link" href="">News</a></p>
+                </nav>
+                <button class="btn btn_main">Contact Us</button>
+                <button class="btn btn_burger">
+                    <div class="icon icon_burger">
+                    </div>
+                </button>
+            </header>
+            <div class="explore__container">
+                <div class="explore__text">
+                    <h1 class="explore__title">Omnis
+                        Voluptas</h1>
+                    <p class="explore__description">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe
+                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <button class="btn btn_secondary">Explore</button>
+                </div>
+                <img src="/src/img/desktop-im.svg" alt="Desktop" class="explore__img" />
+                <div class="socials socials_explore">
                     <a class="socials__link" href=""><img class="socials__img" src="/src/img/facebook.svg" alt=""></a>
                     <a class="socials__link" href=""><img class="socials__img" src="/src/img/twitter.svg" alt=""></a>
                     <a class="socials__link" href=""><img class="socials__img" src="/src/img/instagram.svg" alt=""></a>
-                </div> -->
+                </div>
             </div>
         </section>
         <section class="present">
             <div class="present__text">
-                <h5 class="present__mini-title">Quis autem</h5>
+                <p class="present__mini-title">Quis autem</p>
                 <h2 class="present__title">Corporis suscipit
                     laboriosam</h2>
                 <div class="present__text-container">
                     <div class="present__item">
-                        <h3 class="present__option">Totam rem aperiam</h3>
-                        <img src="/src/img/point-up.svg" alt="">
+                        <p class="present__option">Totam rem aperiam</p>
+                        <img src="./src/img/point-up.svg" alt="">
                     </div>
                     <p class="present__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                         impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
@@ -60,25 +64,27 @@
                 </div>
                 <div class="present__text-container">
                     <div class="present__item">
-                        <h3 class="present__option">Eaque ipsa quae</h3>
-                        <img src="/src/img/point-down.svg" alt="">
+                        <p class="present__option">Eaque ipsa quae</p>
+                        <img src="./src/img/point-down.svg" alt="">
                     </div>
                 </div>
                 <div class="present__text-container">
                     <div class="present__item">
-                        <h3 class="present__option">Inventore veritatis</h3>
-                        <img src="/src/img/point-down.svg" alt="">
+                        <p class="present__option">Inventore veritatis</p>
+                        <img src="./src/img/point-down.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="present__img">
-                <img src="/src/img/backblue.svg" alt="" class="present__back-img">
-                <img src="/src/img/abstract.png" alt="" class="present__front-img">
-                <img src="/src/img/Triangle.svg" alt="" class="present__triangle">
+                <img src="./src/img/backblue.svg" alt="" class="present__back-img">
+                <img src="./src/img/abstract.png" alt="" class="present__front-img">
+                <div class="icon icon_triangle">
+                    <img src="./src/img/Triangle.svg" alt="" class="present__triangle">
+                </div>
             </div>
         </section>
         <section class="works">
-            <h5 class="works__mini-title">Nisi ut aliquid</h5>
+            <p class="works__mini-title">Nisi ut aliquid</p>
             <div class="works__text">
                 <h2 class="works__title">Ullam corporis
                     suscipit</h2>
@@ -89,20 +95,26 @@
                     labore et dolore magnam aliquam quaerat voluptatem.</p>
             </div>
             <ul class="works__nav">
-                <li class="works__nav-item">Quis Autem</li>
-                <li class="works__nav-item">Reprehenderit</li>
-                <li class="works__nav-item">Voluptate</li>
-                <li class="works__nav-item">Molestiae</li>
-                <li class="works__nav-item">Consequatur</li>
+                <li class="works__nav-item"><a href="" class="works__nav-link"> Quis Autem</a></li>
+                <li class="works__nav-item"><a href="" class="works__nav-link">Reprehenderit</a></li>
+                <li class="works__nav-item"><a href="" class="works__nav-link">Voluptate</a></li>
+                <li class="works__nav-item"><a href="" class="works__nav-link">Molestiae</a></li>
+                <li class="works__nav-item"><a href="" class="works__nav-link">Consequatur</a></li>
             </ul>
             <div class="works__photo">
-                <img src="/src/img/ocean.png" alt="" class="works__photo-img">
-                <img src="/src/img/cells.png" alt="" class="works__photo-img">
-                <!-- <div class="works__photo-text">
-                    <h4 class="works__photo-title">Exercitation</h4>
-                    <p class="works__photo-description">Ullamco laboris</p>
-                </div> -->
-                <img src="/src/img/universe.png" alt="" class="works__photo-img">
+                <div class="works__photo-card">
+                    <img src="./src/img/ocean.png" alt="" class="works__photo-img">
+                </div>
+                <div class="works__photo-card">
+                    <img src="./src/img/cells.png" alt="" class="works__photo-img">
+                    <div class="works__photo-text">
+                        <h4 class="works__photo-title">Exercitation</h4>
+                        <p class="works__photo-description">Ullamco laboris</p>
+                    </div>
+                </div>
+                <div class="works__photo-card">
+                    <img src="./src/img/universe.png" alt="" class="works__photo-img">
+                </div>
             </div>
             <button class="btn btn_third">All Works</button>
         </section>
@@ -112,37 +124,37 @@
                 doloremque laudantium, totam rem aperiam.</p>
             <div class="features__cards">
                 <div class="features__card">
-                    <img src="/src/img/Consequuntur.svg" alt="" class="features__card-img">
+                    <img src="./src/img/Consequuntur.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Consequuntur</h4>
                     <p class="features__card-description">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit
                         aut fugit</p>
                 </div>
                 <div class="features__card">
-                    <img src="/src/img/Voluptatem.svg" alt="" class="features__card-img">
+                    <img src="./src/img/Voluptatem.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Voluptatem</h4>
                     <p class="features__card-description">Sed quia non numquam eius modi tempora incidunt ut labore et
                         dolore magnam</p>
                 </div>
                 <div class="features__card">
-                    <img src="/src/img/quisquam.svg" alt="" class="features__card-img">
+                    <img src="./src/img/quisquam.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Quisquam</h4>
                     <p class="features__card-description">Quis nostrum exercitationem ullam corporis suscipit laboriosam
                     </p>
                 </div>
                 <div class="features__card">
-                    <img src="/src/img/Aliquid.svg" alt="" class="features__card-img">
+                    <img src="./src/img/Aliquid.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Aliquid</h4>
                     <p class="features__card-description">Quis autem vel eum iure reprehenderit voluptate velit esse
                         quam nihil</p>
                 </div>
                 <div class="features__card">
-                    <img src="/src/img/Excepteur.svg" alt="" class="features__card-img">
+                    <img src="./src/img/Excepteur.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Excepteur</h4>
                     <p class="features__card-description">Sint occaecat cupidatat non proident culpa qui officia
                         deserunt mollit anim</p>
                 </div>
                 <div class="features__card">
-                    <img src="/src/img/Accusamus.svg" alt="" class="features__card-img">
+                    <img src="./src/img/Accusamus.svg" alt="" class="features__card-img">
                     <h4 class="features__card-title">Accusamus</h4>
                     <p class="features__card-description">Odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     </p>
@@ -150,9 +162,9 @@
             </div>
         </section>
         <section class="team">
-            <img src="/src/img/fullblue.svg" alt="" class="team__back-img">
+            <img src="./src/img/fullblue.png" alt="" class="team__back-img">
             <div class="team__text">
-                <h5 class="team__mini-title">Repellendus</h5>
+                <p class="team__mini-title">Repellendus</p>
                 <h2 class="team__title">Temporibus
                     quibusdam</h2>
                 <p class="team__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
@@ -160,7 +172,17 @@
                 <button class="btn btn_secondary">Our team</button>
             </div>
             <div class="team__pictures">
-                <img src="/src/img/people.png" alt="Desktop" class="team__img">
+                <img src="/src/img/abstractoval.png" alt="" class="team__pictures-back">
+                 <img src="/src/img/teampic1.png" srcset="/src/img/teampic1@2x.png 2x" alt=""
+                    class="team__pictures-avatar">
+                <img src="/src/img/teampic2.png" srcset="/src/img/teampic2@2x.png 2x" alt="" class="
+                    team__pictures-avatar">
+                 <img src="/src/img/teampic3.png" srcset="/src/img/teampic3@2x.png 2x" alt="" class="
+                    team__pictures-avatar">
+                <img src="/src/img/teampic4.png" srcset="/src/img/teampic4@2x.png 2x" alt="" class="
+                    team__pictures-avatar">
+                <img src="/src/img/teampic5.png" srcset="/src/img/teampic5@2x.png 2x" alt="" class="
+                    team__pictures-avatar"> 
             </div>
         </section>
         <section class="review">
@@ -168,41 +190,44 @@
                 <h2 class="review__title">Officis debitis</h2>
                 <p class="review__description">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
                     voluptatibus
-                    maiores alias consequatur aut perferendis doloribus asperiores repella./p>
+                    maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
             </div>
             <div class="review__cards">
                 <div class="review__card">
-                    <img src="/src/img/avatar1.jpg" srcset="/src/img/avatar1@2x.jpg 2x" alt="" class="review__card-img">
+                    <img src="./src/img/avatar1.jpg" srcset="/src/img/avatar1@2x.jpg 2x" alt=""
+                        class="review__card-img">
                     <p class="review__card-description">"Voluptatem accusantium doloremque laudantium, totam rem
                         aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
-                    <h4 class="review__card-title">Evelyn Allen</h4>
+                    <p class="review__card-title">Evelyn Allen</p>
                 </div>
                 <div class="review__card">
-                    <img src="/src/img/avatar2.jpg" srcset="/src/img/avatar2@2x.jpg 2x" alt="" class="review__card-img">
+                    <img src="./src/img/avatar2.jpg" srcset="/src/img/avatar2@2x.jpg 2x" alt=""
+                        class="review__card-img">
                     <p class="review__card-description">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
                         odit aut fugit, sed quia consequuntur magni dolores"</p>
-                    <h4 class="review__card-title">Malin Quist</h4>
+                    <p class="review__card-title">Malin Quist</p>
                 </div>
                 <div class="review__card">
-                    <img src="/src/img/avatar3.jpg" srcset="/src/img/avatar3@2x.jpg 2x" alt="" class="review__card-img">
+                    <img src="./src/img/avatar3.jpg" srcset="/src/img/avatar3@2x.jpg 2x" alt=""
+                        class="review__card-img">
                     <p class="review__card-description">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                         amet, consectetur, adipisci numquam eius"
                     </p>
-                    <h4 class="review__card-title">Pan Su</h4>
+                    <p class="review__card-title">Pan Su</p>
                 </div>
             </div>
             <div class="review__company">
-                <img src="/src/img/compact.png" alt="" class="review__company-item">
-                <img src="/src/img/company.png" alt="" class="review__company-item">
-                <img src="/src/img/ucc.png" alt="" class="review__company-item">
-                <img src="/src/img/corelmania.png" alt="" class="review__company-item">
-                <img src="/src/img/tvdigital.png" alt="" class="review__company-item">
-                <img src="/src/img/changes.png" alt="" class="review__company-item">
+                <img src="./src/img/compact.png" alt="" class="review__company-item">
+                <img src="./src/img/company.png" alt="" class="review__company-item">
+                <img src="./src/img/ucc.png" alt="" class="review__company-item">
+                <img src="./src/img/corelmania.png" alt="" class="review__company-item">
+                <img src="./src/img/tvdigital.png" alt="" class="review__company-item">
+                <img src="./src/img/changes.png" alt="" class="review__company-item">
             </div>
         </section>
         <section class="blog">
             <div class="blog__text">
-                <h5 class="blog__mini-title">Nisi ut aliquid</h5>
+                <p class="blog__mini-title">Nisi ut aliquid</p>
                 <h2 class="blog__title">Omnis voluptas
                     assumenda</h2>
                 <p class="blog__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
@@ -210,14 +235,15 @@
                 <button class="btn btn_third btn_flex-start">Our blog</button>
             </div>
             <div class="blog__pictures">
-                <img src="/src/img/man.png" alt="Desktop" class="blog__img">
+                <img src="./src/img/man.png" alt="Desktop" class="blog__img">
+                <img src="./src/img/bluesquare.png" alt="" class="blog__back-img">
                 <div class="blog__card">
                     <h4 class="blog__card-title">Itaque earum rerum</h4>
                     <p class="blog__card-description">Temporibus autem quibusdam et aut officiis debitis aut rerum
                         necessitatibus saepe eveniet ut et voluptates
                     </p>
                     <div class="blog__person">
-                        <img src="/src/img/avatar4.png" srcset="/src/img/avatar4@2x.png 2x" alt=""
+                        <img src="./src/img/avatar4.png" srcset="/src/img/avatar4@2x.png 2x" alt=""
                             class="blog__name-img">
                         <p class="blog__person-name">Adaora Azubuike</p>
                     </div>
@@ -235,37 +261,39 @@
                 <input type="text" placeholder="Your email" class="form__input">
                 <button class="btn btn_third">Contact Us</button>
             </form>
+            <footer class="footer">
+                <div class="footer__nav">
+                    <div class="footer__list">
+                        <div class="footer__list-title">Consectetur</div>
+                        <div class="footer__list-item">Adipiscing</div>
+                        <div class="footer__list-item">Elit</div>
+                        <div class="footer__list-item">Eiusmod</div>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list-title">Tempor</div>
+                        <div class="footer__list-item">Incididunt</div>
+                        <div class="footer__list-item">Labore</div>
+                        <div class="footer__list-item">Dolore</div>
+                    </div>
+                    <div class="footer__list">
+                        <div class="footer__list-title">Magna</div>
+                        <div class="footer__list-item">Aliqua</div>
+                        <div class="footer__list-item">Minim</div>
+                        <div class="footer__list-item">Venaim</div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="socials socials_footer">
+                        <a class="socials__link" href=""><img class="socials__img" src="./src/img/facebook-vio.svg"
+                                alt=""></a>
+                        <a class="socials__link" href=""><img class="socials__img" src="./src/img/twitter-vio.svg"
+                                alt=""></a>
+                        <a class="socials__link" href=""><img class="socials__img" src="./src/img/inst-vio.svg" alt=""></a>
+                    </div>
+                    <p class="footer__copyright">Copyright 2019. All Rights Reserved.</p>
+                </div>
+            </footer>
         </section>
-        <footer class="footer"> 
-            <div class="footer__nav">
-                <div class="footer__list">
-                    <div class="footer__list-title">Consectetur</div>
-                    <div class="footer__list-item">Adipiscing</div>
-                    <div class="footer__list-item">Elit</div>
-                    <div class="footer__list-item">Eiusmod</div>
-                </div>
-                <div class="footer__list">
-                    <div class="footer__list-title">Tempor</div>
-                    <div class="footer__list-item">Incididunt</div>
-                    <div class="footer__list-item">Labore</div>
-                    <div class="footer__list-item">Dolore</div>
-                </div>
-                <div class="footer__list">
-                    <div class="footer__list-title">Magna</div>
-                    <div class="footer__list-item">Aliqua</div>
-                    <div class="footer__list-item">Minim</div>
-                    <div class="footer__list-item">Venaim</div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="socials socials_footer">
-                    <a class="socials__link" href=""><img class="socials__img" src="/src/img/facebook-vio.svg" alt=""></a>
-                    <a class="socials__link" href=""><img class="socials__img" src="/src/img/twitter-vio.svg" alt=""></a>
-                    <a class="socials__link" href=""><img class="socials__img" src="/src/img/inst-vio.svg" alt=""></a>
-                </div>
-                <p class="footer__copyright">Copyright 2019. All Rights Reserved.</p>
-            </div>
-        </footer>
     </div>
 </body>
 

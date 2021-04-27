@@ -3,14 +3,19 @@
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid rgba($black, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: $black;
+
+    @media all and (max-width:690px) {
+        align-items: flex-start;
+    }
 
     &__img {
 
         position: absolute;
         z-index: -1;
         left: 0;
-        width: 100%;
-        max-height: 76.8rem;
         height: 100%;
     }
 
@@ -28,6 +33,11 @@
         line-height: 6.4rem;
         font-weight: 600;
         margin-bottom: 2.3rem;
+
+        @media all and (max-width:1000px) {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
     }
 
     &__description {

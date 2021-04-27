@@ -1,18 +1,44 @@
 .present {
     display: flex;
     align-items: center;
-    padding: 10rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 13.5rem;
+    justify-content: space-between;
+    color: $black;
+
+    @media all and (max-width: 1170px) {
+        padding-left: 5rem;
+    }
+    
+
+    @media all and (max-width: $screen_phablet) {
+        padding-left: 1.5rem;
+    }
+
+    @media all and (max-width:1000px) {
+        flex-direction: column;
+    }
 
     &__mini-title {
+        font-weight: 700;
         font-size: 1.6rem;
-        line-height: 2.4rem;
         margin-bottom: 1.8rem;
+        text-transform: uppercase;
+        font-family: "Poppins";
     }
 
     &__title {
         font-size: 5.6rem;
         line-height: 6.4rem;
         margin-bottom: 5.5rem;
+        max-width: 49.8rem;
+        font-weight: 700;
+
+        @media all and (max-width:1000px) {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
     }
 
     &__text-container {
@@ -25,20 +51,28 @@
 
     }
 
+    &__text {
+        margin-right: 1rem;
+    }
+
     &__option {
         font-size: 1.6rem;
         line-height: 2.4rem;
         font-weight: 600;
         font-family: Sans Source Pro;
         margin-right: 0.8rem;
+        position: relative;
 
-        // &:first-child::after {
-        //     content: "";
-        //     display: block;
-        //     width: 6rem;
-        //     border-bottom: 2px solid $orange;
+        &::after:first-child {
+            content: "";
+            display: block;
+            width: 2rem;
+            height: 0.3rem;
+            background-color: $violet;
+            position: absolute;
+            left: 0;
 
-        // }
+        }
     }
 
     &__description {
@@ -47,18 +81,50 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
         opacity: 49%;
+        max-width: 47rem;
     }
 
+
+    &__img {
+        position: relative;
+
+        @media all and (max-width:1000px){
+            margin-top: 5.8rem;
+        }
+
+    }
 
     &__front-img {
         position: absolute;
-        transform: translate(-67rem, -2rem);
+        left: 33px;
+        top: -32px;
+
+        @media all and (max-width:1250px) {
+            width: 80%;
+        }
+
+        @media all and (max-width:1000px) {
+            width: 33.9rem;
+            left: 16px;
+            top: -16px;
+        }
+    }
+
+    &__back-img {
+        @media all and (max-width:1250px) {
+            width: 80%;
+        }
+
+        @media all and (max-width:1000px) {
+            width: 35.5rem;
+        }
     }
 
     &__triangle {
-        position: absolute;
-        transform: translate(10px, 10px);
-        z-index: 1;
+        @media all and (max-width:1000px) {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
     }
 
 }

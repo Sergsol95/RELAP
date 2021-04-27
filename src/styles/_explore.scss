@@ -1,21 +1,38 @@
 .explore {
     display: flex;
-    padding: 3.5rem 0;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    height: 76.8rem;
+    overflow: hidden;
+    position: relative;
+
 
     @media all and (max-width: 850px) {
         flex-direction: column;
     }
-    
+
 
     &__text {
-        margin-bottom: 12rem;
 
         @media all and (max-width: 850px) {
             margin-bottom: 1rem;
         }
 
+    }
+
+    &__container {
+        display: flex;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 4.8rem;
+
+        @media all and (max-width:$screen_phablet) {
+            flex-direction: column;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
     }
 
 
@@ -27,6 +44,10 @@
         line-height: 7.2rem;
         max-width: 35rem;
         margin-bottom: 2.5rem;
+
+        @media all and (max-width: 900px) {
+            margin-top: 2.3rem;
+        }
 
         @media all and (max-width: 550px) {
             font-size: 5.6rem;
@@ -43,24 +64,30 @@
     }
 
     &__img {
-        width: 70.5rem;
-        position: relative;
+        max-width: 70.5rem;
+        position: absolute;
+        top: 70px;
+        right: 0;
 
-        @media all and (max-width: 1150px) {
+        @media all and (max-width: 1380px) {
             width: 60rem;
-            height: 65rem;
+            height: auto;
         }
 
-        @media all and (max-width: 980px) {
+        @media all and (max-width: 1280px) {
             width: 50rem;
-            height: 65rem;
+            height: auto;
         }
 
-        @media all and (max-width: 850px) {
+        @media all and (max-width: 1000px) {
             width: 41rem;
             height: auto;
             position: relative;
             left: 3rem;
+        }
+
+        @media all and (max-width: 900px) {
+            top: 0;
         }
     }
 

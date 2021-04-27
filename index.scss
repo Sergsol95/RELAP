@@ -1,5 +1,6 @@
 @import "./src/styles/fonts";
 @import "./src/styles/variables";
+@import "./src/styles/mixins";
 
 * {
     box-sizing: border-box;
@@ -9,6 +10,8 @@ html {
     font-size: 10px;
 }
 
+
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -17,15 +20,40 @@ body {
     display: flex;
     justify-content: center;
 
-    p {
-        margin: 0
-    }
-
-    h1, h2, h3, h4, h5 {
-        margin: 0;
-        font-family: Poppins, sans-serif;
-    }
 }
+
+p {
+    margin: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.works,
+.features,
+.team,
+.review,
+.blog,
+.contact,
+.footer {
+    @include baseHorizontalsPaddings;
+}
+
+.explore {
+    @include mediumHorizontalsPaddings;
+}
+
+.header {
+    @include smallHorizontalsPaddings;
+}
+
+
 
 @import "./src/styles/page";
 @import './src/styles/socials';
@@ -36,8 +64,9 @@ body {
 @import "./src/styles/works";
 @import "./src/styles/features";
 @import "./src/styles/team";
-@import "./src/styles/review.scss";
+@import "./src/styles/review";
 @import "./src/styles/blog";
 @import "./src/styles/contact";
 @import "./src/styles/form";
 @import "./src/styles/footer";
+@import "./src/styles/icon";

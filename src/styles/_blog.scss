@@ -4,12 +4,24 @@
     position: relative;
     background-color: $lightrose;
     color: $black;
-    padding: 16rem 0;
-    justify-content: center;
+    padding-top: 14.4rem;
+    padding-bottom: 8rem;
+    justify-content: space-between;
+
+    @media all and (max-width:1000px) {
+        flex-direction: column;
+        padding-top: 4.5rem;
+        padding-bottom: 4.9rem;
+        align-items: center;
+    }
 
     &__text {
-        margin-top: 6rem;
-        margin-right: 10rem;
+        margin-top: 2rem;
+        margin-right: 1.5rem;
+
+        @media all and (max-width:1000px) {
+            margin-right: 0;
+        }
     }
 
     &__mini-title {
@@ -17,6 +29,9 @@
         line-height: 2.4rem;
         text-transform: uppercase;
         margin-bottom: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins";
     }
 
     &__title {
@@ -25,6 +40,12 @@
         line-height: 6.4rem;
         font-weight: 600;
         margin-bottom: 2.3rem;
+
+        @media all and (max-width:1000px) {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
+
     }
 
     &__description {
@@ -36,13 +57,50 @@
         font-weight: 600;
     }
 
-    &__img {
+    &__pictures {
         position: relative;
+
+        @media all and (max-width:1000px) {
+            margin-top: 6.7rem;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: 32px;
+        top: -30px;
+
+
+        @media all and (max-width:1320px) {
+            width: 90%;
+        }
+
+        @media all and (max-width:1000px) {
+            width: 32.9rem;
+            left: 19px;
+            top: -17px;
+        }
+    }
+
+    &__back-img {
+        @media all and (max-width:1320px) {
+            width: 90%;
+        }
+
+        @media all and (max-width:1000px) {
+            width: 32.9rem;
+        }
     }
 
     &__card {
         position: absolute;
-        transform: translate(4rem, -20rem);
+        left: 78px;
+        bottom: 78px;
+
+        @media all and (max-width:1000px) {
+            left: 46px;
+            bottom: 45px;
+        }
     }
 
     &__card-title {

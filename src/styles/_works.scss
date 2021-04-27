@@ -1,14 +1,18 @@
 .works {
     display: flex;
     flex-direction: column;
-    background-color: #FDF2FF;
-    padding: 5rem 0;
+    background-color: $lightrose;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: $black;
 
 
     &__mini-title {
+        font-weight: 700;
         font-size: 1.6rem;
         margin-bottom: 1.8rem;
         text-transform: uppercase;
+        font-family: "Poppins";
     }
 
     &__text {
@@ -53,10 +57,19 @@
         margin-bottom: 4.2rem;
     }
 
+    &__nav-link {
+        text-decoration: none;
+        opacity: 49%;
+        color: $black;
+
+        :active {
+            opacity: 1;
+        }
+    }
+
     &__nav-item {
         font-size: 1.6rem;
         line-height: 2.4rem;
-        opacity: 49%;
 
         @media all and (max-width: 650px) {
             margin-top: 1rem;
@@ -75,15 +88,23 @@
         justify-content: space-between;
         margin-bottom: 4.5rem;
 
-        @media all and (max-width:1150px) {
+        @media all and (max-width:1250px) {
             flex-direction: column;
         }
     }
 
-    &__photo-img {
+    &__photo-card {
         position: relative;
+    }
 
-        @media all and (max-width: 1150px) {
+    &__photo-img {
+        margin-right: 1rem;
+
+        @media all and (max-width: 1300px) {
+            width: 34.6rem;
+        }
+
+        @media all and (max-width: 1250px) {
             margin-top: 1.7rem;
         }
 
@@ -95,7 +116,20 @@
 
     &__photo-text {
         position: absolute;
+        left: 32px;
+        bottom: 26px;
     }
 
+    &__photo-title {
+        color: $white;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
 
+    &__photo-description {
+        opacity: 49.8%;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $white;
+    }
 }

@@ -11,20 +11,14 @@
     }
 
     &_explore {
-        position: absolute;
-        bottom: 100px;
-        transform: translateX(530%);
+        z-index: 1;
+        margin-top: auto;
 
-        @media all and (max-width:1150px) 
-        {
-            transform: translateX(430%); 
-        }
-
-        @media all and (max-width:980px) 
-        {
-            transform: translateX(350%); 
+        @media all and (max-width: 865px) {
+            transform: translateY(-19.5rem);
         }
     }
+
 
     &_footer {
         margin-bottom: 1.4rem;

@@ -4,12 +4,29 @@
     position: relative;
     background-color: $lightrose;
     color: $black;
-    padding: 16rem 0;
-    justify-content: center;
+    padding-top: 14.4rem;
+    padding-bottom: 8rem;
+    justify-content: space-between;
+
+    @media all and (max-width: $screen_phablet-big) {
+        flex-direction: column;
+        padding-top: 4.5rem;
+        padding-bottom: 4.9rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media all and (max-width: $phone_big) {
+        text-align: left;
+    }
 
     &__text {
-        margin-top: 6rem;
-        margin-right: 10rem;
+        margin-top: 2rem;
+        margin-right: 1.5rem;
+
+        @media all and (max-width: $screen_phablet-big) {
+            margin-right: 0;
+        }
     }
 
     &__mini-title {
@@ -17,6 +34,9 @@
         line-height: 2.4rem;
         text-transform: uppercase;
         margin-bottom: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Poppins";
     }
 
     &__title {
@@ -25,6 +45,12 @@
         line-height: 6.4rem;
         font-weight: 600;
         margin-bottom: 2.3rem;
+
+        @media all and (max-width: $screen_phablet-big) {
+            font-size: 4rem;
+            line-height: 4.8rem;
+        }
+
     }
 
     &__description {
@@ -36,13 +62,66 @@
         font-weight: 600;
     }
 
-    &__img {
+    &__pictures {
         position: relative;
+
+        @media all and (max-width: $screen_phablet-big) {
+            margin-top: 6.7rem;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: 3.2rem;
+        top: -3rem;
+
+
+        @media all and (max-width: $desktop) {
+            width: 90%;
+        }
+
+        @media all and (max-width: $screen_phablet-big) {
+            width: 32.9rem;
+            left: 1.9rem;
+            top: -1.7rem;
+        }
+
+        @media all and (max-width: $phone_big) {
+            left: 0.9rem;
+            top: -0.3rem;
+            width: 31.9rem;
+        }
+
+        @media all and (max-width: $phone) {
+            left: 0.9rem;
+            top: -0.3rem;
+            width: 28.9rem;
+        }
+    }
+
+    &__back-img {
+        @media all and (max-width: $desktop) {
+            width: 90%;
+        }
+
+        @media all and (max-width: $screen_phablet-big) {
+            width: 32.9rem;
+        }
+
+        @media all and (max-width: $phone) {
+            width: 29.9rem;
+        }
     }
 
     &__card {
         position: absolute;
-        transform: translate(4rem, -20rem);
+        left: 7.8rem;
+        bottom: 7.8rem;
+
+        @media all and (max-width: $screen_phablet-big) {
+            left: 4.6rem;
+            bottom: 4.5rem;
+        }
     }
 
     &__card-title {

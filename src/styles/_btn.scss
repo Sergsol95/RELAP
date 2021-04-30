@@ -13,39 +13,33 @@
     cursor: pointer;
     justify-content: center;
     position: relative;
+    min-width: 17rem;
+    min-height: 4.8rem;
+    line-height: 23px;
 
 
     &_main {
         border: 1px solid $grey;
 
-        @media all and (max-width: 750px) {
+        @media all and (max-width: $phone_large) {
             display: none;
         }
     }
 
     &_burger {
         display: none;
+        padding: 0;
+        min-width: 2rem;
+        min-height: 1.5rem;
 
-        @media all and (max-width: 750px) {
-            display: flex;
-            width: 2rem;
-            height: 0.3rem;
-            background-color: $violet;
-            border-radius: 0;
-            padding: 0;
-            position: relative;
-
-            ::after {
-                display: block;
-                content: "";
-                position: absolute;
-                width: 2rem;
-                height: 0.3rem;
-                background-color: $violet;
-                padding: 10px;
-            }
+        @media all and (max-width: $screen_phablet) {
+            display: block;
         }
     }
+
+
+
+    
 
     &_secondary {
         background-color: $orange;
@@ -60,6 +54,16 @@
 
     &_flex-start {
         margin: 0;
+    }
+
+    &_blog {
+        @media all and (max-width: $screen_phablet-big) {
+            margin: 0 auto;
+        }
+
+        @media all and (max-width: $phone_big) {
+            margin: 0;
+        }
     }
 
 }

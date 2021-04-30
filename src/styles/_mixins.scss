@@ -1,0 +1,34 @@
+@mixin baseHorizontalsPaddings {
+    padding: 0 13.5rem;
+
+    @media all and (max-width: 1170px) {
+        padding: 0 5rem;
+    }
+    
+
+    @media all and (max-width: $screen_phablet) {
+        padding: 0 1.5rem;
+    }
+}
+
+@mixin smallHorizontalsPaddings {
+
+    @media all and (max-width: $screen_phablet) {
+        padding: 0 1.5rem;
+    }
+}
+
+@mixin mediumHorizontalsPaddings {
+
+    padding: 0 13.5rem;
+
+    @media all and (max-width: 1170px) {
+        padding: 0 5rem;
+    }
+    
+
+    @media all and (max-width: $screen_phablet) {
+        padding: 0;
+    }
+}
+

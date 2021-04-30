@@ -1,14 +1,18 @@
 .works {
     display: flex;
     flex-direction: column;
-    background-color: #FDF2FF;
-    padding: 5rem 0;
+    background-color: $lightrose;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    color: $black;
 
 
     &__mini-title {
+        font-weight: 700;
         font-size: 1.6rem;
         margin-bottom: 1.8rem;
         text-transform: uppercase;
+        font-family: "Poppins";
     }
 
     &__text {
@@ -16,18 +20,18 @@
         justify-content: space-between;
         margin-bottom: 5.5rem;
 
-        @media all and (max-width: 850px) {
+        @media all and (max-width: $screen_phablet-big) {
             flex-direction: column;
         }
     }
 
     &__title {
         max-width: 43.1rem;
-        font-size: 5.4rem;
+        font-size: 5.6rem;
         line-height: 6.4rem;
         font-weight: 600;
 
-        @media all and (max-width: 850px) {
+        @media all and (max-width: $screen_phablet-small) {
             font-size: 4rem;
             line-height: 4.8rem;
         }
@@ -39,7 +43,11 @@
         line-height: 2.4rem;
         opacity: 49%;
 
-        @media all and (max-width: 850px) {
+        @media all and (max-width: $desktop) {
+            max-width: 45rem;
+        }
+
+        @media all and (max-width: $screen_phablet-small) {
             margin-top: 2.4rem;
         }
     }
@@ -53,12 +61,21 @@
         margin-bottom: 4.2rem;
     }
 
+    &__nav-link {
+        text-decoration: none;
+        opacity: 49%;
+        color: $black;
+
+        :active {
+            opacity: 1;
+        }
+    }
+
     &__nav-item {
         font-size: 1.6rem;
         line-height: 2.4rem;
-        opacity: 49%;
 
-        @media all and (max-width: 650px) {
+        @media all and (max-width: $phone_very-big) {
             margin-top: 1rem;
         }
 
@@ -67,35 +84,4 @@
             margin-right: 3rem;
         }
     }
-
-
-    &__photo {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 4.5rem;
-
-        @media all and (max-width:1150px) {
-            flex-direction: column;
-        }
-    }
-
-    &__photo-img {
-        position: relative;
-
-        @media all and (max-width: 1150px) {
-            margin-top: 1.7rem;
-        }
-
-        @media all and (max-width: 850px) {
-            width: 34.5rem;
-            height: auto;
-        }
-    }
-
-    &__photo-text {
-        position: absolute;
-    }
-
-
 }

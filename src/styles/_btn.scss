@@ -15,12 +15,13 @@
     position: relative;
     min-width: 17rem;
     min-height: 4.8rem;
+    line-height: 23px;
 
 
     &_main {
         border: 1px solid $grey;
 
-        @media all and (max-width: 750px) {
+        @media all and (max-width: $phone_large) {
             display: none;
         }
     }
@@ -53,6 +54,16 @@
 
     &_flex-start {
         margin: 0;
+    }
+
+    &_blog {
+        @media all and (max-width: $screen_phablet-big) {
+            margin: 0 auto;
+        }
+
+        @media all and (max-width: $phone_big) {
+            margin: 0;
+        }
     }
 
 }

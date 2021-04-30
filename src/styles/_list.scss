@@ -1,0 +1,44 @@
+.list {
+    &__container {
+        margin-bottom: 2.4rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__text {
+        margin-right: 1rem;
+    }
+
+    &__option {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        font-family: Sans Source Pro;
+        margin-right: 0.8rem;
+        position: relative;
+
+        &::after:first-child {
+            content: "";
+            display: block;
+            width: 2rem;
+            height: 0.3rem;
+            background-color: $violet;
+            position: absolute;
+            left: 0;
+
+        }
+    }
+
+    &__description {
+        margin-bottom: 2.4rem;
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        opacity: 49%;
+        max-width: 47rem;
+    }
+}

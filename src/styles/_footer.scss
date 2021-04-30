@@ -3,41 +3,44 @@
     align-items: flex-end;
     padding-top: 6.1rem;
     padding-bottom: 6.1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
 
-    @media all and (max-width:690px) {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 170%;
+        height: 1px;
+        background-color: black;
+        left: -50%;
+        top: 0;
+        opacity: 10%;
+    }
+
+
+
+    @media all and (max-width: $screen_phablet-smallest) {
         flex-direction: column;
         align-items: flex-start;
     }
 
     &__nav {
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        max-width: 65rem;
 
-        @media all and (max-width:690px) {
+        @media all and (max-width: $phone) {
             flex-direction: column;
         }
     }
 
     &__list {
-        margin-right: 23rem;
-
-        @media all and (max-width:1100px) {
-            margin-right: 18rem;
-        }
-
-        @media all and (max-width:970px) {
-            margin-right: 14rem;
-        }
-
-        @media all and (max-width:850px) {
-            margin-right: 10rem;
-        }
-
-        @media all and (max-width:850px) {
-            margin-right: 10rem;
-        }
-
-        @media all and (max-width:666px) {
-            margin-bottom: 4rem;
+        @media all and (max-width: $phone) {
+            margin-bottom: 5.8rem;
         }
     }
 
@@ -62,8 +65,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 2.8rem;
 
-        @media all and (max-width:666px) {
+        @media all and (max-width: $phone_very-big) {
             margin-top: 1.8rem;
         }
     }

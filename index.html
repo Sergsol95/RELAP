@@ -14,6 +14,8 @@
         <section class="explore">
             <img src="./src/img/back.png" srcset="./src/img/back@2x.png 2x, ./src/img/back@3x.png 3x"
                 class="header__cover" alt="">
+            <img src="./src/img/back-mobile.png" srcset="./src/img/back-mobile@2x.png 2x, ./src/img/back@3x.png 3x"
+                class="header__cover-mobile" alt="">
             <header class="header">
                 <h2 class="header__title">RELAP</h2>
                 <nav class="header__nav">
@@ -52,26 +54,30 @@
                 <p class="present__mini-title">Quis autem</p>
                 <h2 class="present__title">Corporis suscipit
                     laboriosam</h2>
-                <div class="present__text-container">
-                    <div class="present__item">
-                        <p class="present__option">Totam rem aperiam</p>
-                        <img src="./src/img/point-up.svg" alt="">
+                <div class="list list_present">
+                    <div class="list__container">
+                        <div class="list__item">
+                            <p class="list__option">Totam rem aperiam</p>
+                            <img src="./src/img/point-up.svg" alt="">
+                        </div>
+                        <p class="list__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                            nihil
+                            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+                            omnis
+                            dolor
+                            repellendus.</p>
                     </div>
-                    <p class="present__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                        impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
-                        dolor
-                        repellendus.</p>
-                </div>
-                <div class="present__text-container">
-                    <div class="present__item">
-                        <p class="present__option">Eaque ipsa quae</p>
-                        <img src="./src/img/point-down.svg" alt="">
+                    <div class="list__container">
+                        <div class="list__item">
+                            <p class="list__option">Eaque ipsa quae</p>
+                            <img src="./src/img/point-down.svg" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="present__text-container">
-                    <div class="present__item">
-                        <p class="present__option">Inventore veritatis</p>
-                        <img src="./src/img/point-down.svg" alt="">
+                    <div class="list__container">
+                        <div class="list__item">
+                            <p class="list__option">Inventore veritatis</p>
+                            <img src="./src/img/point-down.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,19 +107,20 @@
                 <li class="works__nav-item"><a href="" class="works__nav-link">Molestiae</a></li>
                 <li class="works__nav-item"><a href="" class="works__nav-link">Consequatur</a></li>
             </ul>
-            <div class="works__photo">
-                <div class="works__photo-card">
-                    <img src="./src/img/ocean.png" alt="" class="works__photo-img">
+            <div class="card__list">
+                <div class="card card_works">
+                    <img src="./src/img/ocean.png" alt="" class="card__img">
                 </div>
-                <div class="works__photo-card">
-                    <img src="./src/img/cells.png" alt="" class="works__photo-img">
-                    <div class="works__photo-text">
-                        <h4 class="works__photo-title">Exercitation</h4>
-                        <p class="works__photo-description">Ullamco laboris</p>
+                <div class="card__card">
+                    <img src="./src/img/cells.png" alt="" class="card__img">
+                    <div class="card__overlay"></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Exercitation</h4>
+                        <p class="card__description">Ullamco laboris</p>
                     </div>
                 </div>
-                <div class="works__photo-card">
-                    <img src="./src/img/universe.png" alt="" class="works__photo-img">
+                <div class="card__card">
+                    <img src="./src/img/universe.png" alt="" class="card__img">
                 </div>
             </div>
             <button class="btn btn_third">All Works</button>
@@ -163,6 +170,7 @@
         </section>
         <section class="team">
             <img src="./src/img/fullblue.png" alt="" class="team__back-img">
+            <img src="./src/img/team-mobile.png" alt="" class="team__mobile-img">
             <div class="team__text">
                 <p class="team__mini-title">Repellendus</p>
                 <h2 class="team__title">Temporibus
@@ -173,16 +181,16 @@
             </div>
             <div class="team__pictures">
                 <img src="/src/img/abstractoval.png" alt="" class="team__pictures-back">
-                 <img src="/src/img/teampic1.png" srcset="/src/img/teampic1@2x.png 2x" alt=""
+                <img src="/src/img/teampic1.png" srcset="/src/img/teampic1@2x.png 2x" alt=""
                     class="team__pictures-avatar">
                 <img src="/src/img/teampic2.png" srcset="/src/img/teampic2@2x.png 2x" alt="" class="
                     team__pictures-avatar">
-                 <img src="/src/img/teampic3.png" srcset="/src/img/teampic3@2x.png 2x" alt="" class="
+                <img src="/src/img/teampic3.png" srcset="/src/img/teampic3@2x.png 2x" alt="" class="
                     team__pictures-avatar">
                 <img src="/src/img/teampic4.png" srcset="/src/img/teampic4@2x.png 2x" alt="" class="
                     team__pictures-avatar">
                 <img src="/src/img/teampic5.png" srcset="/src/img/teampic5@2x.png 2x" alt="" class="
-                    team__pictures-avatar"> 
+                    team__pictures-avatar">
             </div>
         </section>
         <section class="review">
@@ -232,7 +240,7 @@
                     assumenda</h2>
                 <p class="blog__description">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
                     impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
-                <button class="btn btn_third btn_flex-start">Our blog</button>
+                <button class="btn btn_third btn_flex-start btn_blog">Our blog</button>
             </div>
             <div class="blog__pictures">
                 <img src="./src/img/man.png" alt="Desktop" class="blog__img">
@@ -259,7 +267,7 @@
             </div>
             <form class="form form_contact" action="">
                 <input type="text" placeholder="Your email" class="form__input">
-                <button class="btn btn_third">Contact Us</button>
+                <button class="btn btn_third">Send</button>
             </form>
             <footer class="footer">
                 <div class="footer__nav">
@@ -288,7 +296,8 @@
                                 alt=""></a>
                         <a class="socials__link" href=""><img class="socials__img" src="./src/img/twitter-vio.svg"
                                 alt=""></a>
-                        <a class="socials__link" href=""><img class="socials__img" src="./src/img/inst-vio.svg" alt=""></a>
+                        <a class="socials__link" href=""><img class="socials__img" src="./src/img/inst-vio.svg"
+                                alt=""></a>
                     </div>
                     <p class="footer__copyright">Copyright 2019. All Rights Reserved.</p>
                 </div>

@@ -1,0 +1,142 @@
+.card {
+    position: relative;
+    cursor: pointer;
+
+    &__list {
+        align-items: center;
+        display: flex;
+        margin-bottom: 4.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+
+    &__img {
+        margin-right: 1rem;
+
+        @media all and (max-width: $desktop) {
+            max-width: 34.6rem;
+            width: 100%;
+        }
+
+        @media all and (max-width: 1250px) {
+            margin-top: 1.7rem;
+        }
+
+        @media all and (max-width: $screen_phablet-small) {
+            max-width: 34.6rem;
+            height: auto;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        left: 32px;
+        bottom: 26px;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+
+    &__description {
+        opacity: 49.8%;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $white;
+    }
+
+    &__overlay {
+        display: none;
+
+        &:active {
+            position: absolute;
+            display: block;
+        }
+    }
+
+    &_blog {
+
+        position: relative;
+
+        @media all and (max-width: $screen_phablet-big) {
+            margin-top: 6.7rem;
+        }
+
+        &__img {
+            position: absolute;
+            left: 32px;
+            top: -30px;
+
+
+            @media all and (max-width: $desktop) {
+                width: 90%;
+            }
+
+            @media all and (max-width: $screen_phablet-big) {
+                width: 32.9rem;
+                left: 19px;
+                top: -17px;
+            }
+        }
+
+        &__back-img {
+            @media all and (max-width: $desktop) {
+                width: 90%;
+            }
+
+            @media all and (max-width: $screen_phablet-big) {
+                width: 32.9rem;
+            }
+        }
+
+
+        &__card {
+            position: absolute;
+            left: 78px;
+            bottom: 78px;
+
+            @media all and (max-width: $screen_phablet-big) {
+                left: 46px;
+                bottom: 45px;
+            }
+        }
+
+        &__title {
+            font-family: 700;
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            color: $white;
+            margin-bottom: 0.8rem;
+        }
+
+        &__card-description {
+            font-weight: 400;
+            max-width: 47.4rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $white;
+            opacity: 0.49;
+            margin-bottom: 1.6rem;
+        }
+
+        &__person {
+            display: flex;
+            align-items: center;
+        }
+
+        &__name-img {
+            margin-right: 2rem;
+        }
+
+        &__person-name {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $white;
+        }
+    }
+}

@@ -36,7 +36,7 @@
         font-weight: 700;
         margin-bottom: 2.3rem;
 
-        @media all and (max-width:1050px) {
+        @media all and (max-width: 1050px) {
             font-size: 4rem;
             line-height: 4.8rem;
         }
@@ -59,10 +59,30 @@
         max-height: 88.8rem;
         object-fit: cover;
 
-        @media all and (max-width:1050px) {
+        @media all and (max-width: 1050px) {
             max-height: 107.8rem;
             height: 117%;
         }
+
+        @media all and (max-width: $phone_medium) {
+            display: none;
+        }
+    }
+
+    &__mobile-img {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        max-height: 116.8rem;
+        height: 124%;
+        object-fit: cover;
+
+        @media all and (max-width: $phone_medium) {
+            display: block;
+        }
+
     }
 
     &__img {
@@ -71,18 +91,23 @@
 
     &__pictures {
         position: relative;
-        width: 431px;
-        height: 396px;
+        width: 43.1rem;
+        height: 39.6rem;
     }
 
     &__pictures-back {
-        width: 485px;
+        width: 48.5rem;
         position: absolute;
 
         @media all and (max-width:1050px) {
-            left: 25px;
-            width: 400px;
-            top: 30px;
+            left: 2.5rem;
+            width: 40rem;
+            top: 3rem;
+        }
+
+        @media all and (max-width: $phone_medium) {
+            left: 4.6rem;
+            width: 36.3rem;
         }
     }
 
@@ -94,10 +119,14 @@
             top: 17%;
 
             @media all and (max-width:1050px) {
-                width: 92px;
-                height: 93px;
+                width: 9.2rem;
+                height: 9.3rem;
                 right: 10%;
                 top: 22%;
+            }
+
+            @media all and (max-width: $phone_medium) {
+                right: 15%;
             }
         }
 
@@ -106,10 +135,17 @@
             top: 3%;
 
             @media all and (max-width:1050px) {
-                width: 136px;
-                height: 139px;
+                width: 13.6rem;
+                height: 13.9rem;
                 left: 8%;
                 top: 13%;
+            }
+
+            @media all and (max-width: $phone_medium) {
+                left: 16%;
+                top: 13%;
+                width: 11.5rem;
+                height: auto;
             }
         }
 
@@ -118,10 +154,14 @@
             bottom: 21%;
 
             @media all and (max-width:1050px) {
-                width: 40px;
-                height: 41px;
+                width: 4rem;
+                height: 4.1rem;
                 right: 14%;
                 bottom: 25%;
+            }
+
+            @media all and (max-width: $phone_medium) {
+                right: 18%;
             }
         }
 
@@ -130,10 +170,17 @@
             bottom: -6%;
 
             @media all and (max-width:1050px) {
-                width: 66px;
-                height: 67px;
+                width: 6.6rem;
+                height: 6.7rem;
                 right: 30%;
                 bottom: 4%;
+            }
+
+            @media all and (max-width: $phone_medium) {
+                width: 5.8rem;
+                right: 31%;
+                bottom: 11%;
+                height: auto;
             }
         }
 
@@ -142,10 +189,14 @@
             bottom: 5%;
 
             @media all and (max-width:1050px) {
-                width: 92px;
-                height: 93px;
+                width: 9.2rem;
+                height: 9.3rem;
                 left: 12%;
                 bottom: 13%;
+            }
+
+            @media all and (max-width: $phone_medium) {
+                left: 16%;
             }
         }
     }

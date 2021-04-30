@@ -8,18 +8,23 @@
     padding-bottom: 8rem;
     justify-content: space-between;
 
-    @media all and (max-width:1000px) {
+    @media all and (max-width: $screen_phablet-big) {
         flex-direction: column;
         padding-top: 4.5rem;
         padding-bottom: 4.9rem;
         align-items: center;
+        text-align: center;
+    }
+
+    @media all and (max-width: $phone_big) {
+        text-align: left;
     }
 
     &__text {
         margin-top: 2rem;
         margin-right: 1.5rem;
 
-        @media all and (max-width:1000px) {
+        @media all and (max-width: $screen_phablet-big) {
             margin-right: 0;
         }
     }
@@ -41,7 +46,7 @@
         font-weight: 600;
         margin-bottom: 2.3rem;
 
-        @media all and (max-width:1000px) {
+        @media all and (max-width: $screen_phablet-big) {
             font-size: 4rem;
             line-height: 4.8rem;
         }
@@ -60,46 +65,62 @@
     &__pictures {
         position: relative;
 
-        @media all and (max-width:1000px) {
+        @media all and (max-width: $screen_phablet-big) {
             margin-top: 6.7rem;
         }
     }
 
     &__img {
         position: absolute;
-        left: 32px;
-        top: -30px;
+        left: 3.2rem;
+        top: -3rem;
 
 
-        @media all and (max-width:1320px) {
+        @media all and (max-width: $desktop) {
             width: 90%;
         }
 
-        @media all and (max-width:1000px) {
+        @media all and (max-width: $screen_phablet-big) {
             width: 32.9rem;
-            left: 19px;
-            top: -17px;
+            left: 1.9rem;
+            top: -1.7rem;
+        }
+
+        @media all and (max-width: $phone_big) {
+            left: 0.9rem;
+            top: -0.3rem;
+            width: 31.9rem;
+        }
+
+        @media all and (max-width: $phone) {
+            left: 0.9rem;
+            top: -0.3rem;
+            width: 28.9rem;
         }
     }
 
     &__back-img {
-        @media all and (max-width:1320px) {
+        @media all and (max-width: $desktop) {
             width: 90%;
         }
 
-        @media all and (max-width:1000px) {
+        @media all and (max-width: $screen_phablet-big) {
             width: 32.9rem;
+        }
+
+        @media all and (max-width: $phone) {
+            width: 29.9rem;
         }
     }
 
     &__card {
         position: absolute;
-        left: 78px;
-        bottom: 78px;
+        left: 7.8rem;
+        bottom: 7.8rem;
 
-        @media all and (max-width:1000px) {
-            left: 46px;
-            bottom: 45px;
+        @media all and (max-width: $screen_phablet-big) {
+            left: 4.6rem;
+            bottom: 4.5rem;
         }
     }
 

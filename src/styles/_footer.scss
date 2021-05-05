@@ -33,14 +33,14 @@
         flex-wrap: wrap;
         max-width: 65rem;
 
-        @media all and (max-width: $phone) {
+        @media all and (max-width: $screen_phone) {
             flex-direction: column;
         }
     }
 
     &__list {
-        @media all and (max-width: $phone) {
-            margin-bottom: 5.8rem;
+        @media all and (max-width: $screen_phone) {
+            margin-bottom: 4rem;
         }
     }
 
@@ -67,7 +67,7 @@
         align-items: flex-start;
         margin-top: 2.8rem;
 
-        @media all and (max-width: $phone_very-big) {
+        @media all and (max-width: $screen_phone_very-big) {
             margin-top: 1.8rem;
         }
     }
@@ -77,5 +77,11 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
         opacity: 0.49;
+    }
+
+    &__line {
+        width: 1px;
+        height: 1px;
+        margin-top: 1rem;
     }
 }

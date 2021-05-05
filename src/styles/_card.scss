@@ -15,7 +15,7 @@
     &__img {
         margin-right: 1rem;
 
-        @media all and (max-width: $desktop) {
+        @media all and (max-width: $screen_desktop) {
             max-width: 34.6rem;
             width: 100%;
         }
@@ -68,23 +68,23 @@
 
         &__img {
             position: absolute;
-            left: 32px;
-            top: -30px;
+            left: 3.3rem;
+            top: -3rem;
 
 
-            @media all and (max-width: $desktop) {
+            @media all and (max-width: $screen_desktop) {
                 width: 90%;
             }
 
             @media all and (max-width: $screen_phablet-big) {
                 width: 32.9rem;
-                left: 19px;
-                top: -17px;
+                left: 1.9rem;
+                top: -1.7rem;
             }
         }
 
         &__back-img {
-            @media all and (max-width: $desktop) {
+            @media all and (max-width: $screen_desktop) {
                 width: 90%;
             }
 
@@ -96,12 +96,12 @@
 
         &__card {
             position: absolute;
-            left: 78px;
-            bottom: 78px;
+            left: 7.8rem;
+            bottom: 7.8rem;
 
             @media all and (max-width: $screen_phablet-big) {
-                left: 46px;
-                bottom: 45px;
+                left: 4.6rem;
+                bottom: 4.5rem;
             }
         }
 

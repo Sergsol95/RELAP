@@ -1,19 +1,21 @@
 .present {
     display: flex;
     align-items: center;
-    padding-top: 12.8rem;
+    padding-top: 9.6rem;
     padding-bottom: 9.6rem;
     padding-left: 13.5rem;
     justify-content: space-between;
     color: $black;
 
-    @media all and (max-width: $desktop-small) {
+    @media all and (max-width: $screen_desktop-small) {
         padding-left: 5rem;
     }
 
 
     @media all and (max-width: $screen_phablet) {
         padding-left: 1.5rem;
+        padding-top: 4.5rem;
+        padding-bottom: 4.8rem;
     }
 
     @media all and (max-width: $screen_phablet-big) {
@@ -99,7 +101,7 @@
         left: 3.3rem;
         top: -3.2rem;
 
-        @media all and (max-width: $desktop-big) {
+        @media all and (max-width: $screen_desktop-big) {
             width: 80%;
         }
 
@@ -107,26 +109,26 @@
             max-width: 35.5rem;
             width: 100%;
             left: 1.6rem;
-            top: -1.6rem;
+            top: -2.6rem;
         }
 
-        @media all and (max-width: 425px) {
+        @media all and (max-width: $screen_phone_regular) {
             max-width: 34rem;
             width: 100%;
-            left: 1.3rem;
-            top: -1.6rem;
+            left: 1.6rem;
+            top: -.6rem;
         }
 
-        @media all and (max-width: $phone) {
+        @media all and (max-width: $screen_phone) {
             max-width: 28rem;
             width: 100%;
-            left: 0.9rem;
+            left: 1rem;
             top: -1.6rem;
         }
     }
 
     &__back-img {
-        @media all and (max-width: $desktop-big) {
+        @media all and (max-width: $screen_desktop-big) {
             width: 80%;
         }
 
@@ -135,7 +137,7 @@
             width: 100%;
         }
 
-        @media all and (max-width: $phone) {
+        @media all and (max-width: $screen_phone) {
             max-width: 29rem;
         }
     }

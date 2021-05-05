@@ -15,13 +15,13 @@
     position: relative;
     min-width: 17rem;
     min-height: 4.8rem;
-    line-height: 23px;
+    line-height: 2.3rem;
 
 
     &_main {
         border: 1px solid $grey;
 
-        @media all and (max-width: $phone_large) {
+        @media all and (max-width: $screen_phone_large) {
             display: none;
         }
     }
@@ -61,7 +61,7 @@
             margin: 0 auto;
         }
 
-        @media all and (max-width: $phone_big) {
+        @media all and (max-width: $screen_phone_big) {
             margin: 0;
         }
     }

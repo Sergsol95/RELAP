@@ -47,7 +47,7 @@
         margin-bottom: 2.5rem;
 
 
-        @media all and (max-width: 550px) {
+        @media all and (max-width: $screen_phone_bigger) {
             font-size: 5.6rem;
             line-height: 6.4rem;
         }
@@ -64,15 +64,16 @@
     &__img {
         max-width: 70.5rem;
         position: absolute;
-        top: 70px;
+        top: 7rem;
         right: 0;
 
-        @media all and (max-width: $desktop-big) {
+        @media all and (max-width: $screen_desktop-big) {
             width: 60rem;
             height: auto;
+            margin-top: 4rem;
         }
 
-        @media all and (max-width: 1280px) {
+        @media all and (max-width: $screen_desktop-medium) {
             width: 50rem;
             height: auto;
         }
@@ -82,9 +83,10 @@
             height: auto;
             position: relative;
             left: 3rem;
+            margin-top: 0;
         }
 
-        @media all and (max-width: 900px) {
+        @media all and (max-width: $screen_phablet) {
             top: 0;
         }
     }

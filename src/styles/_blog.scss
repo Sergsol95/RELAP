@@ -16,7 +16,7 @@
         text-align: center;
     }
 
-    @media all and (max-width: $phone_big) {
+    @media all and (max-width: $screen_phone_big) {
         text-align: left;
     }
 
@@ -76,7 +76,7 @@
         top: -3rem;
 
 
-        @media all and (max-width: $desktop) {
+        @media all and (max-width: $screen_desktop) {
             width: 90%;
         }
 
@@ -86,21 +86,21 @@
             top: -1.7rem;
         }
 
-        @media all and (max-width: $phone_big) {
-            left: 0.9rem;
-            top: -0.3rem;
-            width: 31.9rem;
+        @media all and (max-width: $screen_phone_big) {
+            left: 1.3rem;
+            top: -1.9rem;
+            width: 32.9rem;
         }
 
-        @media all and (max-width: $phone) {
-            left: 0.9rem;
+        @media all and (max-width: $screen_phone_smallest) {
+            left: 1.2rem;
             top: -0.3rem;
             width: 28.9rem;
         }
     }
 
     &__back-img {
-        @media all and (max-width: $desktop) {
+        @media all and (max-width: $screen_desktop) {
             width: 90%;
         }
 
@@ -108,7 +108,7 @@
             width: 32.9rem;
         }
 
-        @media all and (max-width: $phone) {
+        @media all and (max-width: $screen_phone_smallest) {
             width: 29.9rem;
         }
     }
@@ -132,6 +132,10 @@
         margin-bottom: 0.8rem;
     }
 
+    @media all and (max-width: $screen_phone_smallest) {
+        font-size: 2.2rem;
+    }
+
     &__card-description {
         font-weight: 400;
         max-width: 47.4rem;
@@ -140,6 +144,11 @@
         color: $white;
         opacity: 0.49;
         margin-bottom: 1.6rem;
+
+        @media all and (max-width: $screen_phone_smallest) {
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+        }
     }
 
     &__person {

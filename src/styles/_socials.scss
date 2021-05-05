@@ -14,7 +14,7 @@
         z-index: 1;
         margin-top: auto;
 
-        @media all and (max-width: $screen_phablet-small) {
+        @media all and (max-width: $screen_phablet) {
             transform: translateY(-19.5rem);
         }
     }

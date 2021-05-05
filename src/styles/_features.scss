@@ -5,6 +5,12 @@
     padding-top: 7.1rem;
     padding-bottom: 7.1rem;
 
+    @media all and (max-width: $screen_phablet) {
+        padding-top: 3.8rem;
+        padding-bottom: 3.8rem;
+
+    }
+
 
     &__title {
         font-size: 5.4rem;
@@ -30,7 +36,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        @media all and (max-width: $desktop-big) {
+        @media all and (max-width: $screen_desktop-big) {
             justify-content: center;
         }
     }
@@ -40,8 +46,9 @@
         flex-direction: column;
         align-items: center;
         padding: 3.2rem 2.1rem;
-        min-height: 22.4rem;
+        max-height: 32.4rem;
         max-width: 37rem;
+        margin-top: 4rem;
         transition: 0.3s ease-in-out;
         justify-content: flex-end;
 
@@ -54,7 +61,7 @@
         }
 
         @media all and (max-width: $screen_phablet-small) {
-            margin-top: 4.0rem;
+            margin-top: 4rem;
             padding: 1.6rem
         }
     }

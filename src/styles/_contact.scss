@@ -72,6 +72,19 @@
     &__separator {
         padding-top: 3rem;
         padding-bottom: 3rem;
+        width: 100%;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 170%;
+            height: 1px;
+            background-color: black;
+            left: -50%;
+            bottom: 0;
+            opacity: 10%;
+        }
     }
 
 }

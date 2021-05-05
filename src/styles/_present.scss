@@ -92,6 +92,7 @@
 
         @media all and (max-width: $screen_phablet-big) {
             margin-top: 5.8rem;
+            margin-left: 1rem;
         }
 
     }
@@ -103,6 +104,7 @@
 
         @media all and (max-width: $screen_desktop-big) {
             width: 80%;
+            top: -4.2rem;
         }
 
         @media all and (max-width: $screen_phablet-big) {
@@ -116,7 +118,7 @@
             max-width: 34rem;
             width: 100%;
             left: 1.6rem;
-            top: -.6rem;
+            top: -1.6rem;
         }
 
         @media all and (max-width: $screen_phone) {

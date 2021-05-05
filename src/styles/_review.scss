@@ -111,6 +111,7 @@
 
         @media all and (max-width: $screen_phablet-big) {
             margin-top: 4.2rem;
+            justify-content: center;
         }
 
         @media all and (max-width: $screen_phone_very-big) {

@@ -71,6 +71,10 @@
         }
     }
 
+    &__nav-link-active {
+        opacity: 1;
+    }
+
     &__nav-item {
         font-size: 1.6rem;
         line-height: 2.4rem;

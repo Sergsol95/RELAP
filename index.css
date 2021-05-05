@@ -364,6 +364,7 @@ h5 {
   .explore__img {
     width: 50rem;
     height: auto;
+    top: 15rem;
   }
 }
 @media all and (max-width: 1000px) {
@@ -468,6 +469,7 @@ h5 {
 @media all and (max-width: 1000px) {
   .present__img {
     margin-top: 5.8rem;
+    margin-left: 1rem;
   }
 }
 .present__front-img {
@@ -478,6 +480,7 @@ h5 {
 @media all and (max-width: 1380px) {
   .present__front-img {
     width: 80%;
+    top: -4.2rem;
   }
 }
 @media all and (max-width: 1000px) {
@@ -493,7 +496,7 @@ h5 {
     max-width: 34rem;
     width: 100%;
     left: 1.6rem;
-    top: -0.6rem;
+    top: -1.6rem;
   }
 }
 @media all and (max-width: 385px) {
@@ -594,6 +597,9 @@ h5 {
   color: #333333;
 }
 .works__nav-link:active {
+  opacity: 1;
+}
+.works__nav-link-active {
   opacity: 1;
 }
 .works__nav-item {
@@ -773,7 +779,6 @@ h5 {
 @media all and (max-width: 400px) {
   .team__mobile-img {
     display: block;
-    left: -21px;
   }
 }
 .team__img {
@@ -1003,6 +1008,7 @@ h5 {
 @media all and (max-width: 1000px) {
   .review__company {
     margin-top: 4.2rem;
+    justify-content: center;
   }
 }
 @media all and (max-width: 650px) {
@@ -1121,7 +1127,7 @@ h5 {
 }
 @media all and (max-width: 370px) {
   .blog__img {
-    left: 1.2rem;
+    left: 1rem;
     top: -0.3rem;
     width: 28.9rem;
   }
@@ -1152,6 +1158,11 @@ h5 {
     bottom: 4.5rem;
   }
 }
+@media all and (max-width: 370px) {
+  .blog__card {
+    left: 3.6rem;
+  }
+}
 .blog__card-title {
   font-family: 700;
   font-size: 2.4rem;
@@ -1160,8 +1171,8 @@ h5 {
   margin-bottom: 0.8rem;
 }
 @media all and (max-width: 370px) {
-  .blog {
-    font-size: 2.2rem;
+  .blog__card-title {
+    font-size: 2rem;
   }
 }
 .blog__card-description {
@@ -1175,7 +1186,7 @@ h5 {
 }
 @media all and (max-width: 370px) {
   .blog__card-description {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
   }
 }
@@ -1263,6 +1274,18 @@ h5 {
 .contact__separator {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  width: 100%;
+  position: relative;
+}
+.contact__separator::before {
+  content: "";
+  position: absolute;
+  width: 170%;
+  height: 1px;
+  background-color: black;
+  left: -50%;
+  bottom: 0;
+  opacity: 10%;
 }
 
 .form {
@@ -1325,16 +1348,6 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-}
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 170%;
-  height: 1px;
-  background-color: black;
-  left: -50%;
-  top: 0;
-  opacity: 10%;
 }
 @media all and (max-width: 690px) {
   .footer {
@@ -1430,7 +1443,7 @@ h5 {
   position: absolute;
   left: -4rem;
   top: 40%;
-  padding: 4.5rem 4.1rem 4.4rem 5rem;
+  padding: 4.3rem 4.1rem 4.3rem 5rem;
   background-color: white;
   border-radius: 50%;
   box-shadow: 0.5rem 0rem 2.8rem rgba(0, 0, 0, 0.1);
@@ -1444,17 +1457,22 @@ h5 {
 }
 @media all and (max-width: 1000px) {
   .icon_triangle {
-    padding: 2.2rem 2rem 2.3rem 2.5rem;
+    padding: 2.1rem 2rem 2.1rem 2.5rem;
     left: 45%;
     top: 35%;
   }
 }
 
-.list__container {
-  margin-bottom: 2.4rem;
-  position: relative;
+.list_present {
+  margin: 0;
+  padding: 0;
 }
 .list__item {
+  margin-bottom: 2.4rem;
+  position: relative;
+  list-style: none;
+}
+.list__item-header {
   display: flex;
   align-items: center;
   position: relative;
@@ -1472,7 +1490,7 @@ h5 {
   left: 0;
   bottom: 3px;
 }
-.list__option {
+.list__item-option {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 600;
@@ -1480,7 +1498,7 @@ h5 {
   margin-right: 0.8rem;
   position: relative;
 }
-.list__description {
+.list__item-description {
   margin-bottom: 2.4rem;
   margin-top: 0.8rem;
   font-size: 1.6rem;

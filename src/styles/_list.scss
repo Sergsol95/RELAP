@@ -1,10 +1,17 @@
 .list {
-    &__container {
-        margin-bottom: 2.4rem;
-        position: relative;
+
+    &_present {
+        margin: 0;
+        padding: 0;
     }
 
     &__item {
+        margin-bottom: 2.4rem;
+        position: relative;
+        list-style: none;
+    }
+
+    &__item-header {
         display: flex;
         align-items: center;
         position: relative;
@@ -27,7 +34,7 @@
         bottom: 3px;
     }
 
-    &__option {
+    &__item-option {
         font-size: 1.6rem;
         line-height: 2.4rem;
         font-weight: 600;
@@ -37,7 +44,7 @@
 
     }
 
-    &__description {
+    &__item-description {
         margin-bottom: 2.4rem;
         margin-top: 0.8rem;
         font-size: 1.6rem;

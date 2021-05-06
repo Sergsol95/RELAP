@@ -20,7 +20,7 @@
             width: 100%;
         }
 
-        @media all and (max-width: 1250px) {
+        @media all and (max-width: $screen_desktop-medium) {
             margin-top: 1.7rem;
         }
 
@@ -32,8 +32,8 @@
 
     &__text {
         position: absolute;
-        left: 32px;
-        bottom: 26px;
+        left: 3.2rem;
+        bottom: 2.6rem;
     }
 
     &__title {

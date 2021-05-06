@@ -22,6 +22,10 @@
         flex-direction: column;
     }
 
+    @media all and (max-width: $screen_phone) {
+        align-items: flex-end;
+    }
+
     &__mini-title {
         font-weight: 700;
         font-size: 1.6rem;
@@ -121,7 +125,7 @@
             top: -1.6rem;
         }
 
-        @media all and (max-width: $screen_phone) {
+        @media all and (max-width: $screen_phone_smallest) {
             max-width: 28rem;
             width: 100%;
             left: 1rem;
@@ -139,7 +143,7 @@
             width: 100%;
         }
 
-        @media all and (max-width: $screen_phone) {
+        @media all and (max-width: $screen_phone_smallest) {
             max-width: 29rem;
         }
     }

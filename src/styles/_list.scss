@@ -1,5 +1,24 @@
 .list {
 
+    $this: &;
+
+    &___item {
+        position: relative;
+
+        &_active {
+            #{$this}__open {
+                content: "";
+                display: block;
+                width: 16.1rem;
+                height: 0.8rem;
+                background-color: $violet;
+                position: absolute;
+                left: 0;
+                bottom: 3px;
+            }
+        }
+    }
+
     &_present {
         margin: 0;
         padding: 0;
@@ -21,17 +40,6 @@
 
     &__text {
         margin-right: 1rem;
-    }
-
-    &__open {
-        content: "";
-        display: block;
-        width: 16.1rem;
-        height: 0.8rem;
-        background-color: $violet;
-        position: absolute;
-        left: 0;
-        bottom: 3px;
     }
 
     &__item-option {

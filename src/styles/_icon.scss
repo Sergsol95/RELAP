@@ -44,7 +44,7 @@
         border-radius: 50%;
         box-shadow: 0.5rem 0rem 2.8rem rgb(0 0 0 / 10%);
 
-        @media all and (max-width: 1200px) {
+        @media all and (max-width: $screen_desktop-regular) {
             padding: 3.1rem 2.8rem 2.8rem 3.5rem;
             left: -3.1rem;
             top: 40%;

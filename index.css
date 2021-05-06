@@ -498,7 +498,7 @@ h5 {
 }
 @media all and (max-width: 425px) {
   .present__front-img {
-    max-width: 34rem;
+    max-width: 31.9rem;
     width: 100%;
     left: 1.6rem;
     top: -1.6rem;
@@ -519,7 +519,7 @@ h5 {
 }
 @media all and (max-width: 1000px) {
   .present__back-img {
-    max-width: 35.5rem;
+    max-width: 33.5rem;
     width: 100%;
   }
 }
